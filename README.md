@@ -1,70 +1,379 @@
-# Data Project Documentation Template
+ 
+# 🚦 Road Accident Analysis Project | SQL, Excel, Power BI
 
-A production-ready GitHub template for documenting data analysis, SQL, dashboard, pipeline, and machine learning projects - with built-in examples, narrative guidance, and adaptable structure.
+# 📌 Project Overview
 
-## What This Is
+# 
 
-This is a **cloneable template repository** designed to help data analysts, scientists, and engineers document their projects the way senior practitioners do - with clarity, structure, and storytelling.
+# This repository contains a complete end-to-end Road Accident Analysis Project covering accident records from 2021 and 2022.
 
-Every section includes:
-- Plain-language instructions on what to write
-- Examples of strong vs. weak documentation  
-- Guidance on when to keep or delete a section
+# 
 
-It works for **any kind of data project:**
-- SQL analysis
-- Python / R exploratory analysis
-- Dashboards (Tableau, Power BI, Looker)
-- Data pipelines / ETL workflows
-- Machine learning / predictive modeling
-- Mixed-method projects
+# The project demonstrates how a Data Analyst can transform raw accident data into actionable business insights through data validation, cleaning, modeling, and interactive dashboard development using four of the most widely used analytics tools:
 
-## Why This Exists
+# 
 
-After hundreds of portfolio reviews, the pattern was clear: **the projects that stand out aren't always the most technically sophisticated - they're the ones where the README tells a clear story.**
+# Microsoft SQL Server (MSSQL)
 
-Most data professionals never learn how to document their work. This template fixes that.
+# Microsoft Excel
 
-## How to Use It
+# Microsoft Power BI
 
-1. Click **"Use this template"** (green button at the top)
-2. Name your new repo after your actual project
-3. Copy the contents of `README_TEMPLATE.md` into your new project's README
-4. Delete folders and sections you don't need
-5. Remove all placeholder text and comments before publishing
+# 
 
-Full walkthrough: [HOW_TO_USE.md](HOW_TO_USE.md)
+# 
 
-## What's Inside
+# The objective was to build a reliable analytical framework that supports accurate reporting, performance monitoring, trend analysis, and data-driven decision-making.
 
-The template includes:
-- **README_TEMPLATE.md** - The fill-in-the-blank documentation template
-- **project_metadata.yml** - Optional machine-readable metadata
-- **Complete folder structure** - Pre-built folders for data, notebooks, scripts, queries, reports, visuals, and docs
-- **.gitignore** - Pre-configured to exclude data files
+# 
 
-## Who This Is For
+# 📊 Dataset Overview
 
-- **Beginners** building their first portfolio project
-- **Early-career analysts** cleaning up existing projects
-- **Career switchers** who have technical skills but need to frame their work
-- **Experienced practitioners** who want a consistent structure
+# Dataset Size
 
-## Features
+# Approximately 307,000 accident records
 
-✅ Section-by-section guidance with examples  
-✅ Supports SQL, Python, R, dashboards, pipelines, ML  
-✅ Includes ERD section for SQL projects  
-✅ Pre-built .gitignore for data projects  
-✅ Optional YAML metadata for portfolio automation  
-✅ Delete-what-you-don't-use philosophy  
+# Covers accident activity across two years (2021-2022)
 
-## License
+# Contains 21 attributes describing accident details, environmental conditions, road characteristics, casualties, and vehicle information
 
-MIT License - use this however you want.
+# Key Data Fields
 
-## Credits
+# Accident Index (Unique Identifier)
 
-Created by **Issy BI**
+# Accident Date \& Time
 
-If this helped you, consider starring the repo or sharing it with someone building their data portfolio.
+# Accident Severity
+
+# Fatal
+
+# Serious
+
+# Slight
+
+# Weather Conditions
+
+# Lighting Conditions (Daylight / Darkness)
+
+# Road Surface Conditions
+
+# Road Type
+
+# Number of Casualties
+
+# Number of Vehicles Involved
+
+# Vehicle Type
+
+# Urban / Rural Classification
+
+# 🛠️ Technologies \& Implementation
+
+# 1️⃣ Microsoft SQL Server (MSSQL)
+
+# 
+
+# SQL Server was used for data validation, business rule verification, and analytical calculations to ensure complete consistency between source data and reporting outputs.
+
+# 
+
+# Data Preparation
+
+# Imported and processed a large CSV dataset (\~60 MB)
+
+# Standardized column names by replacing spaces with underscores
+
+# Optimized data types for better storage and query performance
+
+# Applied NULL handling strategies to prevent import failures
+
+# SQL Techniques Applied
+
+# KPI Calculations
+
+# Aggregations (SUM, COUNT, AVG)
+
+# Conditional Logic using CASE WHEN
+
+# Percentage Calculations using CAST and DECIMAL
+
+# Ranking and Top-N Analysis
+
+# Data Validation Queries
+
+# Advanced Filtering and Grouping
+
+# Business Questions Answered
+
+# Total Accidents and Casualties (Current vs Previous Year)
+
+# Casualty Distribution by Vehicle Type
+
+# Accident Severity Analysis
+
+# Top 10 High-Risk Locations
+
+# Urban vs Rural Accident Comparison
+
+# Road Type Performance Analysis
+
+# 2️⃣ Microsoft Excel
+
+# 
+
+# Excel was utilized to create a fully interactive dashboard while demonstrating advanced spreadsheet analytics techniques.
+
+# 
+
+# Data Cleaning
+
+# Corrected data quality issues using Find \& Replace
+
+# Fixed spelling inconsistencies in accident severity classifications
+
+# Data Transformation
+
+# 
+
+# Created additional analytical fields:
+
+# 
+
+# TEXT(Date,"mmm")
+
+# TEXT(Date,"yyyy")
+
+# 
+
+# 
+
+# to generate:
+
+# 
+
+# Year
+
+# Month
+
+# Time-based reporting dimensions
+
+# Dashboard Features
+
+# Pivot Tables
+
+# Pivot Charts
+
+# Calculated Items
+
+# Interactive Slicers
+
+# Timelines
+
+# Professional Dark-Themed Design
+
+# Navigation Buttons and Hyperlinks
+
+# Output
+
+# 
+
+# A fully dynamic dashboard allowing users to explore accident trends across multiple dimensions with a single click.
+
+# 
+
+# 3️⃣ Power BI
+
+# 
+
+# Power BI was used to build a scalable semantic model and executive-level dashboard experience.
+
+# 
+
+# Power Query
+
+# Data Cleaning
+
+# Data Transformation
+
+# Data Profiling
+
+# Data Validation
+
+# Data Modeling
+
+# One-to-Many Relationships
+
+# Star Schema Modeling
+
+# Calendar Table Creation
+
+# DAX Measures
+
+# 
+
+# Developed advanced measures including:
+
+# 
+
+# Current Year Casualties
+
+# Previous Year Casualties
+
+# Year-over-Year Growth (YoY)
+
+# YTD Analysis
+
+# Percentage Contribution Metrics
+
+# 
+
+# Key functions used:
+
+# 
+
+# TOTALYTD()
+
+# SAMEPERIODLASTYEAR()
+
+# CALCULATE()
+
+# DIVIDE()
+
+# 
+
+# Dashboard Visuals
+
+# KPI Cards
+
+# Area Charts
+
+# Donut Charts
+
+# Clustered Column Charts
+
+# Interactive Geographic Maps
+
+# Dynamic Filters and Drilldowns
+
+# UI/UX Design
+
+# 
+
+# Custom dashboard backgrounds were designed in PowerPoint and integrated into Power BI to create a polished, professional reporting experience.
+
+# 
+
+# 
+
+# 📈 Key Business Insights
+
+# 📉 Overall Improvement in Road Safety
+
+# 
+
+# The analysis revealed an overall reduction in both accidents and casualties during 2022 compared to 2021.
+
+# 
+
+# Accident-related metrics decreased by approximately 11%–12%
+
+# Indicates measurable improvements in road safety performance
+
+# 🛣️ High-Risk Road Types
+
+# 
+
+# Single carriageways accounted for more than:
+
+# 
+
+# 70% - 75%
+
+# 
+
+# 
+
+# of total recorded accidents.
+
+# 
+
+# Recommendation
+
+# 
+
+# Infrastructure investment should prioritize converting high-risk single carriageways into safer dual-carriageway roads where feasible.
+
+# 
+
+# 🌆 Accident Concentration Patterns
+
+# 
+
+# Most accidents occurred:
+
+# 
+
+# In Urban Areas
+
+# During Daylight Conditions
+
+# 
+
+# This suggests that traffic density plays a more significant role in accident frequency than visibility constraints alone.
+
+# 
+
+# 🚗 Highest-Risk Vehicle Category
+
+# 
+
+# Cars were responsible for the largest proportion of accident involvement compared with all other vehicle categories.
+
+# 
+
+# This points toward the importance of targeted driver awareness campaigns and stricter traffic enforcement measures.
+
+# 
+
+# 
+
+# &#x20; Skills Demonstrated
+
+# SQL (MSSQL)
+
+# Data Cleaning
+
+# Data Validation
+
+# Exploratory Data Analysis (EDA)
+
+# Data Modeling
+
+# Power Query
+
+# DAX
+
+# Excel Dashboards
+
+# Tableau Visualization
+
+# Power BI Development
+
+# Business Intelligence
+
+# KPI Development
+
+# Dashboard Design (UI/UX)
+
+# Data Storytelling
+
+# 🏆 Project Outcome
+
+# 
+
+# This project demonstrates a complete analytics workflow, starting from raw accident records and ending with validated insights and interactive dashboards across multiple BI platforms.
+
+# 
+
+# It highlights the ability to combine SQL, Excel, Power BI, and Tableau to build production-quality analytical solutions that support business stakeholders with reliable, data-driven decision-making.
+
