@@ -1,379 +1,197 @@
- 
-# 🚦 Road Accident Analysis Project | SQL, Excel, Power BI
+<div align="center">
+
+# 🚦 Road Accident Analysis
+
+### SQL Server • Excel • Power BI • Data Analytics
+
+<p>
+  <strong>End-to-End Road Accident Analytics Project</strong>
+</p>
+
+<p>
+  <a href="#-project-overview">Overview</a> •
+  <a href="#-dataset">Dataset</a> •
+  <a href="#-workflow">Workflow</a> •
+  <a href="#-sql-server-analysis">SQL</a> •
+  <a href="#-power-bi-dashboard">Power BI</a> •
+  <a href="#-key-insights">Insights</a>
+</p>
+
+<br>
+
+<img src="https://img.shields.io/badge/SQL%20Server-Analysis-CC2927?style=for-the-badge&logo=microsoftsqlserver&logoColor=white">
+<img src="https://img.shields.io/badge/Excel-Dashboard-217346?style=for-the-badge&logo=microsoftexcel&logoColor=white">
+<img src="https://img.shields.io/badge/Power%20BI-Dashboard-F2C811?style=for-the-badge&logo=powerbi&logoColor=black">
+<img src="https://img.shields.io/badge/Data%20Analytics-Project-3776AB?style=for-the-badge">
+
+<br><br>
+
+<img src="images/dashboard-preview.png" alt="Road Accident Analysis Dashboard" width="900">
+
+<br>
+
+<em>Interactive Road Accident Analysis Dashboard</em>
+
+</div>
+
+---
 
 # 📌 Project Overview
 
-# 
+This repository contains a complete **End-to-End Road Accident Analysis Project** covering accident records from **2021 and 2022**.
 
-# This repository contains a complete end-to-end Road Accident Analysis Project covering accident records from 2021 and 2022.
+The project demonstrates how raw accident data can be transformed into reliable analytical insights through:
 
-# 
+- Data Validation
+- Data Cleaning
+- Data Transformation
+- SQL Analysis
+- Exploratory Data Analysis
+- Data Modeling
+- KPI Development
+- Interactive Dashboard Development
 
-# The project demonstrates how a Data Analyst can transform raw accident data into actionable business insights through data validation, cleaning, modeling, and interactive dashboard development using four of the most widely used analytics tools:
+The project combines three major analytics tools:
 
-# 
+- 🗄️ **Microsoft SQL Server**
+- 📊 **Microsoft Excel**
+- 📈 **Microsoft Power BI**
 
-# Microsoft SQL Server (MSSQL)
+The main objective is to create a reliable analytical framework for monitoring road accident trends, understanding accident patterns, comparing yearly performance, and supporting data-driven decision-making.
 
-# Microsoft Excel
+---
 
-# Microsoft Power BI
+# 🎯 Business Objectives
 
-# 
+The analysis focuses on answering key business questions such as:
 
-# 
-
-# The objective was to build a reliable analytical framework that supports accurate reporting, performance monitoring, trend analysis, and data-driven decision-making.
-
-# 
-
-# 📊 Dataset Overview
-
-# Dataset Size
-
-# Approximately 307,000 accident records
-
-# Covers accident activity across two years (2021-2022)
-
-# Contains 21 attributes describing accident details, environmental conditions, road characteristics, casualties, and vehicle information
-
-# Key Data Fields
-
-# Accident Index (Unique Identifier)
-
-# Accident Date \& Time
-
-# Accident Severity
-
-# Fatal
-
-# Serious
-
-# Slight
-
-# Weather Conditions
-
-# Lighting Conditions (Daylight / Darkness)
-
-# Road Surface Conditions
-
-# Road Type
-
-# Number of Casualties
-
-# Number of Vehicles Involved
-
-# Vehicle Type
-
-# Urban / Rural Classification
-
-# 🛠️ Technologies \& Implementation
-
-# 1️⃣ Microsoft SQL Server (MSSQL)
-
-# 
-
-# SQL Server was used for data validation, business rule verification, and analytical calculations to ensure complete consistency between source data and reporting outputs.
-
-# 
-
-# Data Preparation
-
-# Imported and processed a large CSV dataset (\~60 MB)
-
-# Standardized column names by replacing spaces with underscores
-
-# Optimized data types for better storage and query performance
-
-# Applied NULL handling strategies to prevent import failures
-
-# SQL Techniques Applied
-
-# KPI Calculations
-
-# Aggregations (SUM, COUNT, AVG)
-
-# Conditional Logic using CASE WHEN
-
-# Percentage Calculations using CAST and DECIMAL
-
-# Ranking and Top-N Analysis
-
-# Data Validation Queries
-
-# Advanced Filtering and Grouping
-
-# Business Questions Answered
-
-# Total Accidents and Casualties (Current vs Previous Year)
-
-# Casualty Distribution by Vehicle Type
-
-# Accident Severity Analysis
-
-# Top 10 High-Risk Locations
-
-# Urban vs Rural Accident Comparison
-
-# Road Type Performance Analysis
-
-# 2️⃣ Microsoft Excel
-
-# 
-
-# Excel was utilized to create a fully interactive dashboard while demonstrating advanced spreadsheet analytics techniques.
-
-# 
-
-# Data Cleaning
-
-# Corrected data quality issues using Find \& Replace
-
-# Fixed spelling inconsistencies in accident severity classifications
-
-# Data Transformation
-
-# 
-
-# Created additional analytical fields:
-
-# 
-
-# TEXT(Date,"mmm")
-
-# TEXT(Date,"yyyy")
-
-# 
-
-# 
-
-# to generate:
-
-# 
-
-# Year
-
-# Month
-
-# Time-based reporting dimensions
-
-# Dashboard Features
-
-# Pivot Tables
-
-# Pivot Charts
-
-# Calculated Items
-
-# Interactive Slicers
-
-# Timelines
-
-# Professional Dark-Themed Design
-
-# Navigation Buttons and Hyperlinks
-
-# Output
-
-# 
-
-# A fully dynamic dashboard allowing users to explore accident trends across multiple dimensions with a single click.
-
-# 
-
-# 3️⃣ Power BI
-
-# 
-
-# Power BI was used to build a scalable semantic model and executive-level dashboard experience.
-
-# 
-
-# Power Query
-
-# Data Cleaning
-
-# Data Transformation
-
-# Data Profiling
-
-# Data Validation
-
-# Data Modeling
-
-# One-to-Many Relationships
-
-# Star Schema Modeling
-
-# Calendar Table Creation
-
-# DAX Measures
-
-# 
-
-# Developed advanced measures including:
-
-# 
-
-# Current Year Casualties
-
-# Previous Year Casualties
-
-# Year-over-Year Growth (YoY)
-
-# YTD Analysis
-
-# Percentage Contribution Metrics
-
-# 
-
-# Key functions used:
-
-# 
-
-# TOTALYTD()
-
-# SAMEPERIODLASTYEAR()
-
-# CALCULATE()
-
-# DIVIDE()
-
-# 
-
-# Dashboard Visuals
-
-# KPI Cards
-
-# Area Charts
-
-# Donut Charts
-
-# Clustered Column Charts
-
-# Interactive Geographic Maps
-
-# Dynamic Filters and Drilldowns
-
-# UI/UX Design
-
-# 
-
-# Custom dashboard backgrounds were designed in PowerPoint and integrated into Power BI to create a polished, professional reporting experience.
-
-# 
-
-# 
-
-# 📈 Key Business Insights
-
-# 📉 Overall Improvement in Road Safety
-
-# 
-
-# The analysis revealed an overall reduction in both accidents and casualties during 2022 compared to 2021.
-
-# 
-
-# Accident-related metrics decreased by approximately 11%–12%
-
-# Indicates measurable improvements in road safety performance
-
-# 🛣️ High-Risk Road Types
-
-# 
-
-# Single carriageways accounted for more than:
-
-# 
-
-# 70% - 75%
-
-# 
-
-# 
-
-# of total recorded accidents.
-
-# 
-
-# Recommendation
-
-# 
-
-# Infrastructure investment should prioritize converting high-risk single carriageways into safer dual-carriageway roads where feasible.
-
-# 
-
-# 🌆 Accident Concentration Patterns
-
-# 
-
-# Most accidents occurred:
-
-# 
-
-# In Urban Areas
-
-# During Daylight Conditions
-
-# 
-
-# This suggests that traffic density plays a more significant role in accident frequency than visibility constraints alone.
-
-# 
-
-# 🚗 Highest-Risk Vehicle Category
-
-# 
-
-# Cars were responsible for the largest proportion of accident involvement compared with all other vehicle categories.
-
-# 
-
-# This points toward the importance of targeted driver awareness campaigns and stricter traffic enforcement measures.
-
-# 
-
-# 
-
-# &#x20; Skills Demonstrated
-
-# SQL (MSSQL)
-
-# Data Cleaning
-
-# Data Validation
-
-# Exploratory Data Analysis (EDA)
-
-# Data Modeling
-
-# Power Query
-
-# DAX
-
-# Excel Dashboards
-
-# Tableau Visualization
-
-# Power BI Development
-
-# Business Intelligence
-
-# KPI Development
-
-# Dashboard Design (UI/UX)
-
-# Data Storytelling
-
-# 🏆 Project Outcome
-
-# 
-
-# This project demonstrates a complete analytics workflow, starting from raw accident records and ending with validated insights and interactive dashboards across multiple BI platforms.
-
-# 
-
-# It highlights the ability to combine SQL, Excel, Power BI, and Tableau to build production-quality analytical solutions that support business stakeholders with reliable, data-driven decision-making.
-
+| Business Question | Analysis |
+|---|---|
+| 🚦 How many accidents occurred? | Accident KPI Analysis |
+| 👥 How many casualties were recorded? | Casualty Analysis |
+| 📅 How did 2022 compare with 2021? | Year-over-Year Analysis |
+| 🛣️ Which road types have the highest accident concentration? | Road Type Analysis |
+| 🚗 Which vehicle categories are most involved? | Vehicle Analysis |
+| 🌆 Are accidents more common in urban or rural areas? | Location Analysis |
+| 🌤️ How do lighting and weather conditions affect accidents? | Environmental Analysis |
+| 📍 Which locations have the highest accident concentration? | Geographic Analysis |
+| ⚠️ Which accident severity categories dominate? | Severity Analysis |
+
+---
+
+# 📊 Dataset
+
+The project analyzes approximately:
+
+<div align="center">
+
+| Metric | Value |
+|---|---:|
+| 🚗 Accident Records | **≈ 307,000** |
+| 📅 Years Covered | **2021 – 2022** |
+| 📋 Attributes | **21** |
+| 💾 Source File | **CSV (~60 MB)** |
+
+</div>
+
+### Key Data Fields
+
+The dataset contains information related to:
+
+**Accident Information**
+
+- Accident Index
+- Accident Date
+- Accident Time
+- Accident Severity
+- Number of Casualties
+- Number of Vehicles
+
+**Road Information**
+
+- Road Type
+- Junction Details
+- Junction Control
+- Carriageway
+- Road Surface Conditions
+- Urban / Rural Area
+
+**Environmental Conditions**
+
+- Weather Conditions
+- Light Conditions
+- Road Surface Conditions
+- Carriageway Hazards
+
+**Vehicle Information**
+
+- Vehicle Type
+- Vehicle Characteristics
+- Number of Vehicles Involved
+
+---
+
+# 🛠️ Technology Stack
+
+<div align="center">
+
+| Technology | Main Purpose |
+|---|---|
+| 🗄️ **SQL Server** | Data Validation & Analytical Queries |
+| 📊 **Microsoft Excel** | Data Analysis & Interactive Dashboard |
+| 📈 **Power BI** | Data Modeling & Business Intelligence |
+| 🔄 **Power Query** | Data Cleaning & Transformation |
+| 📐 **DAX** | KPI & Time Intelligence |
+| 🎨 **PowerPoint** | Dashboard UI/UX Design |
+
+</div>
+
+---
+
+# 🔄 Project Workflow
+
+<div align="center">
+
+```text
+                  ┌──────────────────────┐
+                  │     Raw CSV Data     │
+                  │    ~307K Records     │
+                  └──────────┬───────────┘
+                             │
+                             ▼
+                  ┌──────────────────────┐
+                  │    Data Validation   │
+                  │      SQL Server      │
+                  └──────────┬───────────┘
+                             │
+                             ▼
+                  ┌──────────────────────┐
+                  │   Data Cleaning &    │
+                  │   Transformation     │
+                  │    Excel / Power     │
+                  │       Query          │
+                  └──────────┬───────────┘
+                             │
+                             ▼
+                  ┌──────────────────────┐
+                  │ Exploratory Analysis │
+                  │     SQL / Excel     │
+                  └──────────┬───────────┘
+                             │
+                             ▼
+                  ┌──────────────────────┐
+                  │    Data Modeling     │
+                  │      Power BI        │
+                  └──────────┬───────────┘
+                             │
+                             ▼
+                  ┌──────────────────────┐
+                  │   DAX & KPI Layer    │
+                  │  Time Intelligence   │
+                  └──────────┬───────────┘
+                             │
+                             ▼
+                  ┌──────────────────────┐
+                  │ Interactive          │
+                  │ Accident Dashboard   │
+                  └──────────────────────┘
